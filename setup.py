@@ -30,6 +30,7 @@ setup(
         'Django',
         'django-oscar',
         'wagtail',
+        'django-oscar-api'
     ],
     # mark test target to require extras.
     extras_require = {

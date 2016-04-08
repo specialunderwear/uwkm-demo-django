@@ -23,3 +23,5 @@ OSCAR_ORDER_STATUS_PIPELINE = {
     'paid': ('completed',),
     'completed': ()
 }
+
+OSCARAPI_BLOCK_ADMIN_API_ACCESS = False
