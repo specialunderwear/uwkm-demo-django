@@ -56,9 +56,11 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'widget_tweaks',
-] + get_core_apps(
-    ['uwkmdemo.apps.partner']
-)
+] + get_core_apps([
+    'uwkmdemo.apps.partner',
+    'uwkmdemo.apps.shipping',
+    'uwkmdemo.apps.order'
+])
 
 SITE_ID = 1
 
@@ -143,3 +145,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 from uwkmdemo.settings.uwkm import *
+from uwkmdemo.settings.logs import *

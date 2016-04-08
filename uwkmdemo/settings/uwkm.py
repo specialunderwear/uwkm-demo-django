@@ -12,3 +12,14 @@ OSCAR_DASHBOARD_NAVIGATION[5]['children'] += [{
     'url_name': 'wagtailadmin_home',
 }]
 OSCAR_DASHBOARD_DEFAULT_ACCESS_FUNCTION = 'uwkmdemo.access.access_fn'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+OSCAR_INITIAL_ORDER_STATUS = 'new'
+
+OSCAR_ORDER_STATUS_PIPELINE = {
+    'new': ('pending',),
+    'pending': ('paid',),
+    'paid': ('completed',),
+    'completed': ()
+}
