@@ -56,7 +56,9 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'widget_tweaks',
-] + get_core_apps()
+] + get_core_apps(
+    ['uwkmdemo.apps.partner']
+)
 
 SITE_ID = 1
 
