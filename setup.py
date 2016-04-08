@@ -38,7 +38,7 @@ setup(
     # generate scripts
     entry_points={
         'console_scripts':[
-            'script_name = uwkmdemo.main:main',
+            'manage.py = uwkmdemo.main:main',
         ]
     },
 )
