@@ -29,7 +29,7 @@ setup(
         'setuptools',
         'Django',
         'django-oscar',
-        'wagtail'
+        'wagtail',
     ],
     # mark test target to require extras.
     extras_require = {
@@ -38,10 +38,7 @@ setup(
     # generate scripts
     entry_points={
         'console_scripts':[
-            # 'script_name = name.module:main',
+            'script_name = uwkmdemo.main:main',
         ]
     },
-    # scripts=[
-    #     'manage.py',
-    # ],
 )
